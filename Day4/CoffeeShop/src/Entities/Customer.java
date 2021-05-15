@@ -10,12 +10,12 @@ public class Customer implements IEntity {
 	int yearOfBirth;
 	String nationalityId;
 	
-	public Customer(int id, String firstName, String lastName, int dateOfBirth, String nationalityId) {
+	public Customer(int id, String firstName, String lastName, int yearOfBirth, String nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.yearOfBirth = dateOfBirth;
+		this.yearOfBirth = yearOfBirth;
 		this.nationalityId = nationalityId;
 	}
 
@@ -48,7 +48,7 @@ public class Customer implements IEntity {
 	}
 
 	public void setDateOfBirth(int dateOfBirth) {
-		this.yearOfBirth = dateOfBirth;
+		this.yearOfBirth = yearOfBirth;
 	}
 
 	public String getNationalityId() {
